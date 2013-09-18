@@ -40,4 +40,10 @@ $aLang = array(
 'V6C_PAYPALSBNVPUSR'						=> 'Sandbox PayPal NVP user ID.',
 'V6C_PAYPALSBNVPPWD'						=> 'Sandbox PayPal NVP password.',
 'V6C_PAYPALSBNVPSIG'						=> 'Sandbox PayPal NVP Signature.',
+
+'ECS_LANDING'					            => 'PayPal-Landingpage',
+'ECS_ALLNOTE'					            => 'Allow Note',
+'ECS_BRANDNAME'					            => 'Brandname',
+'ECS_SIDEB'					                => 'PayPal-Logo in Sidebar',
+'ECS_LOGOURL'					            => 'URL for corporate logo (eg. https://www.ihrshop.de/out/azure/img/logo.png).',
 );

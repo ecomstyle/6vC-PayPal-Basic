@@ -41,7 +41,7 @@
             [{ oxmultilang ident="V6C_INSTLMERCKLNK" }]
          </td>
         </tr>
-
+<!--
         <tr class="conftext[{cycle}]">
          <td valign="middle">
 			<textarea class="txtfield" name=confaarrs[v6c_aPayPalLangMap] [{ $readonly }]>[{$confaarrs.v6c_aPayPalLangMap}]</textarea>
@@ -51,7 +51,7 @@
           	[{ oxmultilang ident="V6C_PAYPALLANGMAP" }]
          </td>
         </tr>
-
+-->
         <tr class="conftext[{cycle}]">
          <td valign="middle">
 			<input type=text class="txt" name=confstrs[v6c_sPayPalEmail] value="[{$confstrs.v6c_sPayPalEmail}]" [{ $readonly}]>
@@ -113,6 +113,14 @@
          </td>
         </tr>
 
+       
+
+        <tr>
+         <td colspan="2" align="left" class="nowrap">
+         	[{ oxmultilang ident="ECS_SANDBOX" }]
+         </td>
+         </tr>
+        
         <tr class="conftext[{cycle}]">
          <td valign="middle">
             <input type=hidden name=confbools[v6c_blMrchLnkTst] value=false>
@@ -153,7 +161,111 @@
             [{ oxmultilang ident="V6C_PAYPALSBNVPSIG" }]
          </td>
         </tr>
+        
+         
+         <tr>
+         <td colspan="2" align="left" class="nowrap">
+         	[{ oxmultilang ident="ECS_SETTINGS" }]
+         </td>
+         </tr>
 
+                
+         <tr class="conftext[{cycle}]">
+         <td valign="middle">
+            <input type=hidden name=confbools[v6c_Login] value=false>
+            <input type=checkbox name=confbools[v6c_Login] value=true  [{if ($confbools.v6c_Login)}]checked[{/if}] [{ $readonly }]>
+            [{ oxinputhelp ident="ECS_HELP_LANDING" }]
+         </td>
+         <td valign="middle" width="100%">
+          [{ oxmultilang ident="ECS_LANDING" }]
+         </td>
+        </tr>
+         
+        
+         <tr class="conftext[{cycle}]">
+         <td valign="middle">
+            <input type=hidden name=confbools[v6c_Allnote] value=false>
+            <input type=checkbox name=confbools[v6c_Allnote] value=true  [{if ($confbools.v6c_Allnote)}]checked[{/if}] [{ $readonly }]>
+            [{ oxinputhelp ident="ECS_HELP_ALLNOTE" }]
+         </td>
+         <td valign="middle" width="100%">
+          [{ oxmultilang ident="ECS_ALLNOTE" }]
+         </td>
+        </tr>
+        
+         <tr class="conftext[{cycle}]">
+         <td valign="middle">
+            <input type=hidden name=confbools[v6c_Brandname] value=false>
+            <input type=checkbox name=confbools[v6c_Brandname] value=true  [{if ($confbools.v6c_Brandname)}]checked[{/if}] [{ $readonly }]>
+            [{ oxinputhelp ident="ECS_HELP_BRANDNAME" }]
+         </td>
+         <td valign="middle" width="100%">
+          [{ oxmultilang ident="ECS_BRANDNAME" }]
+         </td>
+        </tr>
+        
+         <tr class="conftext[{cycle}]">
+         <td valign="middle">
+            <input type=hidden name=confbools[v6c_Logotyp] value=false>
+            <input type=checkbox name=confbools[v6c_Logotyp] value=true  [{if ($confbools.v6c_Logotyp)}]checked[{/if}] [{ $readonly }]>
+            [{ oxinputhelp ident="ECS_HELP_LOGOTYP" }]
+         </td>
+         <td valign="middle" width="100%">
+          [{ oxmultilang ident="ECS_LOGOTYP" }]
+         </td>
+        </tr>
+        
+         <tr class="conftext[{cycle}]">
+         <td valign="middle">
+			<input type=text class="txt" name=confstrs[v6c_Logourl] value="[{$confstrs.v6c_Logourl}]" [{ $readonly}]>
+			[{ oxinputhelp ident="ECS_HELP_LOGOURL" }]
+         </td>
+         <td valign="middle" width="100%" >
+            [{ oxmultilang ident="ECS_LOGOURL" }]
+         </td>
+        </tr>
+        
+          <tr class="conftext[{cycle}]">
+         <td valign="middle">
+			<input type=text class="txt" name=confstrs[v6c_Color] value="[{$confstrs.v6c_Color}]" [{ $readonly}]>
+			[{ oxinputhelp ident="ECS_HELP_COLOR" }]
+         </td>
+         <td valign="middle" width="100%" >
+            [{ oxmultilang ident="ECS_COLOR" }]
+         </td>
+        </tr>
+        
+         <tr class="conftext[{cycle}]">
+         <td valign="middle">
+            <input type=hidden name=confbools[v6c_Sideb] value=false>
+            <input type=checkbox name=confbools[v6c_Sideb] value=true  [{if ($confbools.v6c_Sideb)}]checked[{/if}] [{ $readonly }]>
+            [{ oxinputhelp ident="ECS_HELP_SIDEB" }]
+         </td>
+         <td valign="middle" width="100%">
+          [{ oxmultilang ident="ECS_SIDEB" }]
+         </td>
+        </tr>
+
+          <tr>
+         <td colspan="2" align="left" class="nowrap">
+         	[{ oxmultilang ident="ECS_PBTCART" }]
+         </td>
+         </tr>
+                
+        <tr class="conftext[{cycle}]">
+         <td valign="middle">
+            <input type=hidden name=confbools[v6c_altcart] value=false>
+            <input type=checkbox name=confbools[v6c_altcart] value=true  [{if ($confbools.v6c_altcart)}]checked[{/if}] [{ $readonly }]>
+            [{ oxinputhelp ident="ECS_HELP_ALTCART" }]
+         </td>
+         <td valign="middle" width="100%">
+          [{ oxmultilang ident="ECS_ALTCART" }]
+         </td>
+        </tr>
+        
+
+
+ 
 		<!-- Forcing width of first column -->
         <tr>
          <td valign="middle" class="nowrap">
